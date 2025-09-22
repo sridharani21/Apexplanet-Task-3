@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsHub - Stay Informed</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">NewsHub</a>
+                
+                <ul class="nav-links">
+                    <li class="nav-item active" data-category="technology">Technology</li>
+                    <li class="nav-item" data-category="business">Business</li>
+                    <li class="nav-item" data-category="health">Health</li>
+                    <li class="nav-item" data-category="science">Science</li>
+                    <li class="nav-item" data-category="sports">Sports</li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="text" class="search-input" id="search-input" placeholder="Search news...">
+                    <button class="search-btn" id="search-btn">Search</button>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            </div>
+            
+            <div class="mobile-nav" id="mobile-nav">
+                <div class="mobile-search">
+                    <input type="text" class="search-input" id="mobile-search-input" placeholder="Search news...">
+                    <button class="search-btn" id="mobile-search-btn">Search</button>
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-item active" data-category="technology">Technology</li>
+                    <li class="nav-item" data-category="business">Business</li>
+                    <li class="nav-item" data-category="health">Health</li>
+                    <li class="nav-item" data-category="science">Science</li>
+                    <li class="nav-item" data-category="sports">Sports</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero"  >
+        <div class="container">
+            <h1>Stay Informed</h1>
+            <p>Get the latest news from trusted sources around the world, curated just for you.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2 class="section-title" id="section-title">Latest Technology News</h2>
+            
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                Loading news...
+            </div>
+            
+            <div class="cards-grid" id="news-grid"></div>
+        </div>
+    </main>
+
+   
+</body>
+</html>
